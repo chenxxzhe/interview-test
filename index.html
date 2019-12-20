@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interview Questions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+<body>
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-primary">
+            <p class="title">Test 1</p>
+            <p class="subtitle">打开 flux.js 文件, 完成编写函数 flux(num)</p>
+            <div class="content">
+              传入一个正整数 num (1,2,...,n), 使用控制台打印结果:
+              <ul>
+                <li>当 num 为 3 的倍数时, 输出字符串 up;</li>
+                <li>当 num 为 5 的倍数时, 输出字符串 down;</li>
+                <li>当 num 为 3 和 5 倍数时, 输出字符串 up&down;</li>
+                <li>其 num 为其他值时, 输出 num 本身</li>
+              </ul>
+            </div>
+            <pre>例如: flux(6) <br>Result<br>// 1 <br>// 2 <br>// up<br>// 4 <br>// down <br>// up</pre>
+          </article>
+        </div>
+
+        
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+          <div class="content">
+            <p>num = <input id="test1" class="input" type="text" placeholder="6"></p>
+            <div class="buttons">
+              <button id="runButton1" class="button is-primary is-light">运行</button><span>点击运行结果</span>
+            </div>
+            <div id="output1"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-primary">
+            <p class="title">Test 2</p>
+            <p class="subtitle">打开 anagram.js 文件, 完成编写函数 anagram(strA, strB)</p>
+            <div class="content">
+              检查两个提供的字符串是否彼此相似。字母大小写无关紧要。另外，仅考虑字符，而不考虑空格或标点符号。
+            </div>
+            <pre>例如: <br>anagram("finder", "Friend")  -> true<br>anagram("triangle", "integral") -> true<br>anagram("hello", "bye") -> false</pre>
+          </article>
+        </div>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+          <div class="content">
+            <p>strA = <input id="test2a" class="input" type="text" placeholder="finder"></p>
+            <p>strB = <input id="test2b" class="input" type="text" placeholder="Friend"></p>
+            <div class="buttons">
+              <button id="runButton2" class="button is-primary is-light">运行</button><span>点击运行结果</span>
+            </div>
+            <div id="output2"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-primary">
+            <p class="title">Test 3</p>
+            <p class="subtitle">打开 animate.js 文件, 完成编写函数 anagram实现一个 div 滑动的动画,由快至慢 5s 后滑动至 400px 结束. (注:不能使用 CSS3)</p>
+            <div class="content">
+              <div class="box" id="box"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+          <div class="content">
+            <div class="buttons">
+              <button id="runButton3" class="button is-primary is-light">运行</button><span>点击运行结果</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="./index.js"></script>
+
+</body>
+</html>
