@@ -37,12 +37,18 @@ const ele = document.getElementById("box");
 const runButton3 = document.getElementById("runButton3");
 
 runButton3.addEventListener("click", () => {
-  setTimeout(function() {
-    ele.style.left = 0;
-  },350);
-  
+  // setTimeout(function() {
+  //   ele.style.left = 0;
+  // },350);
+  ele.style.left = 0;
   // call animate function here
-  // animate(...)
+  animate({
+    end: 400,
+    duration: 5000,
+    cb: (cur) => {
+      ele.style.left = cur
+    }
+  })
 })
 
 
